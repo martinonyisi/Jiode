@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIODE - Find Where to Stream Movies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>JIODE</h1>
+                <p>Your movie streaming guide</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#tv-shows">TV Shows</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn login-btn">Login</button>
+                <button class="btn signup-btn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for movies, TV shows...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Discover Where to Stream</h2>
+                <p>Find the latest movies and TV shows across all major streaming platforms</p>
+                <div class="hero-buttons">
+                    <button class="btn explore-btn">Explore Now</button>
+                    <button class="btn trending-btn">Trending This Week</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured">
+            <div class="container">
+                <h2 class="section-title">Featured Movies</h2>
+                <div class="movie-grid" id="featured-movies">
+                    <!-- Movies will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="platforms" class="platforms">
+            <div class="container">
+                <h2 class="section-title">Available On</h2>
+                <div class="platform-grid">
+                    <div class="platform-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+                    </div>
+                    <div class="platform-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+                    </div>
+                    <div class="platform-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png" alt="Amazon Prime">
+                    </div>
+                    <div class="platform-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Disney%2B_logo.svg" alt="Disney+">
+                    </div>
+                    <div class="platform-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/HBO_Max_logo.svg" alt="HBO Max">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-releases" class="new-releases">
+            <div class="container">
+                <h2 class="section-title">New Releases</h2>
+                <div class="movie-grid" id="new-releases-movies">
+                    <!-- New releases will be loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About JIODE</h3>
+                    <p>JIODE helps you find where to watch your favorite movies and TV shows across all major streaming platforms.</p>
+                    <p>&copy; 2023 JIODE. All rights reserved to Martony.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#movies">Movies</a></li>
+                        <li><a href="#tv-shows">TV Shows</a></li>
+                        <li><a href="#trending">Trending</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> support@jiode.com</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Movie details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="security.js"></script>
+</body>
+</html>
